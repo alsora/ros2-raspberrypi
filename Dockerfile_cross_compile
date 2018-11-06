@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Alberto Soragna asoragna at irobot dot com
+MAINTAINER Alberto Soragna alberto dot soragna at gmail dot com
 
 # working directory
 ENV HOME /root
