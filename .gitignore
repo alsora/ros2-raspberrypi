@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+
+ros2-raspbian-rootfs
+ros2-raspbian-rootfs.tar
+
+/ros2_ws/*
+!/ros2_ws/cross_compile.sh
+!/ros2_ws/rpi3_toolchainfile.cmake
