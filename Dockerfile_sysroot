@@ -57,9 +57,9 @@ RUN apt-get install --no-install-recommends -y \
 RUN apt-get install -y \
   libyaml-dev \
   python3-yaml \
-  libpoco-dev
+  libpoco-dev \
+  libeigen3-dev
 
-RUN apt -y install libopencv-dev libpoco-dev python-empy python3-dev python3-empy python3-nose python3-pip python3-setuptools python3-vcstool python3-yaml libtinyxml-dev libeigen3-dev libcurl4-openssl-dev libpoco-dev
-RUN apt -y install libcurl4-openssl-dev libqt5core5a libqt5gui5 libqt5opengl5 libqt5widgets5 libxaw7-dev libgles2-mesa-dev libglu1-mesa-dev qtbase5-dev
-
+RUN apt-get install -y libopencv-dev python-empy python3-dev python3-empy python3-nose python3-setuptools libtinyxml-dev
+RUN apt-get install -y libcurl4-openssl-dev libqt5core5a libqt5gui5 libqt5opengl5 libqt5widgets5 libxaw7-dev libgles2-mesa-dev libglu1-mesa-dev qtbase5-dev
 
