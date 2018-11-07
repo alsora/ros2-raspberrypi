@@ -56,11 +56,10 @@ Check the IP address of your Raspberry Pi and the path where you want to copy th
 
 ##### Run publisher node
 
-    $ /home/pi/ros2_bouncy_sdk/install/lib/examples_rclcpp_minimal_publisher/publisher_lambda
-
+    $ ros2 run examples_rclcpp_minimal_publisher publisher_lambda
 
 
 ## Missing features
 
- - Errors when using the Python Command Line interface.
- - Raspberry Pi Camera drivers are not found during cross-compilation.
+ - Errors when importing `rclpy`
+ - `libc6.so` error when building packages depending on `vc` and `libmmal`
