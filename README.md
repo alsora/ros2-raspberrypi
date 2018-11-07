@@ -43,25 +43,20 @@ This last command will mount the ros2_ws directory as a volume. You will find th
 
 ## Usage
 
-On the Raspberry Pi create a directory for the SDK, then copy it there.
-
-For example you can run from your PC
+##### Copy the SDK to the Raspberry
 
     $ rsync -avz -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' --progress ros2_ws/install pi@192.168.0.147:/home/pi/ros2_bouncy_sdk
 
-Check the IP address of your Raspberry Pi and the name of the directory that you have created for the SDK.
+Check the IP address of your Raspberry Pi and the path where you want to copy the SDK.
 
-Then try to run an example node on the Raspberry Pi.
+##### Source ROS2 SDK
 
-First you have to export the name of folder where you have copied the SDK, since it will be different from the one where you have built it.
+On the Raspberry
 
     $ export COLCON_CURRENT_PREFIX=/home/pi/ros2_bouncy_sdk/install
-
-Source the SDK
-
     $ source /home/pi/ros2_bouncy_sdk/install/setup.sh
 
-Run a publisher node
+##### Run publisher node
 
     $ /home/pi/ros2_bouncy_sdk/install/lib/examples_rclcpp_minimal_publisher/publisher_lambda
 
