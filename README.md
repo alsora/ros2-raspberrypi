@@ -51,8 +51,6 @@ Check the IP address of your Raspberry Pi and the path where you want to copy th
 
 ##### Source ROS2 SDK
 
-On the Raspberry
-
     $ export COLCON_CURRENT_PREFIX=/home/pi/ros2_bouncy_sdk/install
     $ source /home/pi/ros2_bouncy_sdk/install/setup.sh
 
