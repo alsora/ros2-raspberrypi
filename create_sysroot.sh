@@ -15,14 +15,9 @@ echo "Create new Docker container"
 
 docker create --name ros2-raspbian raspbian
 
-#docker run -t \
-#  --name ros2-raspbian \
-#  raspbian \
-#  bash
-
 echo "Exporting Docker container..."
 
-if [ -d ros2-raspbian-rootfs.tar ]; then
+if [ -f ros2-raspbian-rootfs.tar ]; then
     rm ros2-raspbian-rootfs.tar
 fi
 
@@ -44,4 +39,7 @@ fi
 
 mkdir ros2-raspbian-rootfs
 
-tar -xf ros2-raspbian-rootfs.tar -C ros2-raspbian-rootfs lib opt usr
+tar -xf ros2-raspbian-rootfs.tar -C ros2-raspbian-rootfs etc lib opt usr
+
+
+bash fix_ld_conf.sh

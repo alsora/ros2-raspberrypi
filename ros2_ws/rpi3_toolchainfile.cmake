@@ -17,9 +17,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
-#set(PATH_POCO_LIB ${CMAKE_CURRENT_LIST_DIR}/build/poco_vendor/poco_external_project_install/lib/)
-#set(PATH_YAML_LIB ${CMAKE_CURRENT_LIST_DIR}/build/libyaml_vendor/libyaml_install/lib/)
-set(CMAKE_BUILD_RPATH /root/rootfs/opt/vc /root/rootfs/usr/lib usr/lib)
+#set(CMAKE_BUILD_RPATH /root/rootfs/opt/vc)
 
 
 # This assumes that pthread will be available on the target system
