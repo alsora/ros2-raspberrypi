@@ -8,7 +8,7 @@ export TOOLCHAIN_PREFIX=arm-linux-gnueabih
 
 colcon \
     build \
-    --merge-install
+    --merge-install \
     --cmake-force-configure \
     --cmake-args \
     -DCMAKE_TOOLCHAIN_FILE=`pwd`/rpi3_toolchainfile.cmake \
