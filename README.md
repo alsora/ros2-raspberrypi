@@ -61,5 +61,4 @@ Check the IP address of your Raspberry Pi and the path where you want to copy th
 
 ## Missing features
 
- - Errors when importing `rclpy`
  - `libc6.so` error when building packages depending on `vc` and `libmmal`
