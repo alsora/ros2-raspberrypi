@@ -6,11 +6,12 @@ Docker environment for cross compiling ROS2 Bouncy for Raspberry Pi
 
 ##### Get a RaspberryPi Raspbian Stretch sysroot.
 
-You can copy your own or create one with the provided script
-
     $ bash create_sysroot.sh
-
+    
 If you want to add a specific dependency, you can do it in `Dockerfile_sysroot`.
+
+If you already have your own sysroot, you can use it. You only have to rename it `ros2-raspbian-rootfs`.
+If you experience any build issue, try again using the sysroot created by the provided bash script.
 
 ##### Get the ROS2 sources
 
